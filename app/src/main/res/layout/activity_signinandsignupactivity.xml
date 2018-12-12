@@ -1,0 +1,188 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.SigninAndSignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signinparent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/signinanim1"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/curveedgesbtn"
+            android:text="@string/signin"/>
+        <Space
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/signupanim1"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/curveedgesbtn"
+            android:text="@string/signup"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/emailsignin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:hint="@string/emailaddress"
+            android:background="@drawable/curveedgesbtngray"/>
+        <EditText
+            android:id="@+id/passwordsignin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:hint="@string/password"
+            android:background="@drawable/curveedgesbtngray"/>
+        <Button
+            android:id="@+id/signinbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/curveedgesbtn"
+            android:text="@string/signin"/>
+
+        <TextView
+            android:id="@+id/forpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Forget Password ?"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupparent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/signinanim"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:background="@drawable/curveedgesbtn"
+                android:text="@string/signin"/>
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/signupanim"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textColor="@color/white"
+                android:background="@drawable/curveedgesbtn"
+                android:text="@string/signup"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/emailsignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="20dp"
+                android:hint="@string/emailaddress"
+                android:background="@drawable/curveedgesbtngray"/>
+            <EditText
+                android:id="@+id/passwordsignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:hint="@string/password"
+                android:background="@drawable/curveedgesbtngray"/>
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/curveedgesbtn"
+                android:text="@string/signup"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="Forget Password ?"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>
+</layout>

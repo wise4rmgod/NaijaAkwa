@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.BuyerProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/buyerprofileparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="@string/profile"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:cropToPadding="true"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_image_24dp"
+            app:civ_border_color="#FFFFFFFF"
+            app:civ_border_width="3dp" />
+        <TextView
+            android:id="@+id/buyerprofilename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="wisdom nwokocha"/>
+        <TextView
+            android:id="@+id/buyerprofilerole"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="Buyer"/>
+        <TextView
+            android:id="@+id/buyerprofileaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="#24 Aggreyy road"/>
+        <TextView
+            android:id="@+id/buyerprofilesex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:text="Sex"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="23"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:text="Followers"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/gray"  />
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:text="23"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:text="Followings"/>
+            </LinearLayout>
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/gray" />
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email_white"
+                    android:text="23"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textAlignment="center"
+                    android:textSize="10sp"
+                    android:text="Messages"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buyerprofileupdatebutton"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/curveedgesbtn"
+                android:text="Update Profile"/>
+            <Button
+                android:id="@+id/buyerprofilesuggestionbutton"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/curveedgesbtn"
+                android:text="Suggestion Box"/>
+        </LinearLayout>
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

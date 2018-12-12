@@ -1,3 +1,108 @@
 <resources>
     <string name="app_name">NaijaAkwa</string>
+    <string name="continues">continue</string>
+    <string name="signin">SIGN IN</string>
+    <string name="signup">SIGN UP</string>
+    <string name="emailaddress">Email</string>
+    <string name="password">Password</string>
+    <string name="designerprofile">Create Designer Profile</string>
+    <string name="fullname">First And Last Name</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="sex">Sex</string>
+    <string name="retry">Retry</string>
+    <string name="gotomap">Goto Map</string>
+    <string name="level">Level</string>
+    <string name="resetemailfailed">Failed to send reset email!</string>
+    <string name="instructionsent">We have sent you instructions to reset your password!</string>
+    <string name="forgotpasswordedittextemail">Type Your E-mail Here</string>
+    <string name="specliazation">Specialization</string>
+    <string name="title_activity_feeds">Feeds</string>
+    <string name="designer">Designer</string>
+    <string name="phone">Phone</string>
+    <string name="termsofservice">Terms of Service</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="buyer">Buyer</string>
+    <string name="resetpasswordemail">We just need your registered email to send you password reset instructions</string>
+    <string name="passwordreset">Password Reset</string>
+    <string name="profile">Profile</string>
+    <string name="register">Register</string>
+    <string name="successful_message"> Successful </string>
+    <string name="unsuccessful_message"> Not Successful </string>
+    <string name="checkboxtext">Click the check box to get relevant information through notification in your phone</string>
+    <string name="confirmation">By clicking the check box you have </string>
+    <string-array name="sex_arrays">
+        <item>Sex</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="specialization_arrays">
+        <item>Specialization</item>
+        <item>Bag</item>
+        <item>Cloth</item>
+        <item>Make Up</item>
+        <item>Shoe</item>
+    </string-array>
+
+    <string-array name="level_arrays">
+        <item>Level</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Expert</item>
+    </string-array>
+
+    <string-array name="states_arrays">
+        <item>State</item>
+        <item>Abia State</item>
+        <item>Adamawa State</item>
+        <item>Akwa Ibom State</item>
+        <item>Anambra State</item>
+        <item>Bauchi State</item>
+        <item>Bayelsa State</item>
+        <item>Benue State</item>
+        <item>Borno State</item>
+        <item>Cross River State</item>
+        <item>Delta State</item>
+        <item>Ebonyi State</item>
+        <item>Edo State</item>
+        <item>Ekiti State</item>
+        <item>Enugu State</item>
+        <item>Gombe State</item>
+        <item>Imo State</item>
+        <item>Jigawa State</item>
+        <item>Kaduna State</item>
+        <item>Kano State</item>
+        <item>Katsina State</item>
+        <item>Kebbi State</item>
+        <item>Kogi State</item>
+        <item>Kwara State</item>
+        <item>Lagos State</item>
+        <item>Nasarawa State</item>
+        <item>Niger State</item>
+        <item>Ogun State</item>
+        <item>Ondo State</item>
+        <item>Osun State</item>
+        <item>Oyo State</item>
+        <item>Plateau State</item>
+        <item>Rivers State</item>
+        <item>Sokoto State</item>
+        <item>Taraba State</item>'
+        <item>Yobe State</item>
+        <item>Zamfara State</item>
+        <item>Abuja (FCT)</item>
+    </string-array>
+    <string name="title_activity_add_map">AddMapActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-5378239849378753/5877170263</string>
+    <string name="title_activity_list_of_designers">ListOfDesignersActivity</string>
+
+
 </resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PostFeedsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/postactivityprofileimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_image_24dp"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="3dp" />
+
+
+
+    <TextView
+        android:id="@+id/postfullnameactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="13dp"
+        android:text="Nwokocha Wisdom" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/posteditext"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:maxLength="100"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/gray"
+            android:textColorLink="@color/golden"
+            android:cursorVisible="false"
+            android:textColor="@color/white"
+
+            android:textCursorDrawable="@drawable/cursorwhite"
+            android:hint="What's the trending topic in fashion"/>
+
+
+    </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/redbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white"
+                android:background="@color/red"
+                />
+            <Button
+                android:id="@+id/goldenbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/golden"
+                />
+            <Button
+                android:id="@+id/graybtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/gray"
+                android:layout_marginStart="10dp"
+               />
+            <Button
+                android:id="@+id/greenbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/green"
+                android:layout_marginStart="10dp"
+                />
+            <Button
+                android:id="@+id/pinkbtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/white"
+                android:background="@color/pink"
+                android:layout_marginStart="10dp"
+                />
+            <Button
+                android:id="@+id/likabtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/lilak"
+                android:layout_marginStart="10dp"
+                />
+            <Button
+                android:id="@+id/purplebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/purple"
+                android:layout_marginStart="10dp"
+               />
+            <Button
+                android:id="@+id/lightbluebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/lightblue"
+                android:layout_marginStart="10dp"
+                />
+            <Button
+                android:id="@+id/orangebtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                android:layout_marginStart="10dp"
+                />
+        </LinearLayout>
+        </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/postbutton"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rippleeffect"
+            android:text="Post"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
