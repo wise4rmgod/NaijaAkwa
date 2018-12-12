@@ -46,7 +46,7 @@ public class DesignerProfileActivity extends AppCompatActivity implements Design
     LinearLayout designerprofileparent;
     @BindView(R.id.designerprofilephonecall)
     ImageView designerprofilephonecall;
-   private String phone;
+    private String phone;
     private DesignerProfilePresenter designerProfilePresenter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
