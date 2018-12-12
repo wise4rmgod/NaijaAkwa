@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "919871037122",
+    "firebase_url": "https://naijaakwa-d0ce4.firebaseio.com",
+    "project_id": "naijaakwa-d0ce4",
+    "storage_bucket": "naijaakwa-d0ce4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919871037122:android:c3c4fc3f2c589187",
+        "android_client_info": {
+          "package_name": "com.developer.wise4rmgod.naijaakwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919871037122-buoc5lr7qjv29q76toulfnluq2n581fp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developer.wise4rmgod.naijaakwa",
+            "certificate_hash": "0659d287b63168594ff6b01b78721f7213dc548d"
+          }
+        },
+        {
+          "client_id": "919871037122-3h448kc8qpfaktjcbfgkdq9ccq2ivk9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo_xVkROg8-iVU-C3YeVAM7RFISBln10U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919871037122-3h448kc8qpfaktjcbfgkdq9ccq2ivk9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
