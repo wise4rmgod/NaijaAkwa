@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class ForgotPasswordActivity extends AppCompatActivity implements ForgotPasswordMVP.view {
   private ForgotPasswordPresenter forgotPasswordPresenter;
@@ -35,7 +36,8 @@ public class ForgotPasswordActivity extends AppCompatActivity implements ForgotP
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
-
+         ButterKnife.bind(this);
+        getSupportActionBar().hide();
         forgotPasswordPresenter = new ForgotPasswordPresenter(this);
 
         forgotpasswordbutton.setOnClickListener(new View.OnClickListener() {

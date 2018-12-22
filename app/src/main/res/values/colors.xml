@@ -11,6 +11,7 @@
     <color name="pink">#FF1493</color>
     <color name="purple">#8B008B</color>
     <color name="lilak">#16917B</color>
+    <color name="black">#000000</color>
     <color name="orange">#EB8809</color>
     <color name="red">#8B0000</color>
 </resources>

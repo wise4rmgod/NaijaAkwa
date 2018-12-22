@@ -32,13 +32,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ListOfDesignersActivity extends AppCompatActivity {
-    private FirebaseAuth auth;
+
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("Designers").child("userid");
+    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("userid");
     @BindView(R.id.listdesignersrecyclerview)
     RecyclerView recyclerView;
     private List<RegisterDesignerClass> mUserList = new ArrayList<>();
-
+    String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,8 +47,8 @@ public class ListOfDesignersActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
 
-        String id = getIntent().getStringExtra("id");
-       // Toast.makeText(getApplicationContext(),id,Toast.LENGTH_LONG).show();
+        id = getIntent().getStringExtra("id");
+        Toast.makeText(getApplicationContext(), id, Toast.LENGTH_SHORT).show();
         boolean connected = false;
         ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
@@ -61,7 +61,7 @@ public class ListOfDesignersActivity extends AppCompatActivity {
             connected = false;
             Toast.makeText(getApplicationContext(), "No Network Connection", Toast.LENGTH_SHORT).show();
         }
-        ref.addValueEventListener(new ValueEventListener() {
+        ref.orderByChild("role").equalTo("designer").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 mUserList.clear();
@@ -72,10 +72,8 @@ public class ListOfDesignersActivity extends AppCompatActivity {
                     recyclerView.setItemAnimator(new DefaultItemAnimator());
                      mUserList.add(registerDesignerClass);
 
-                    recyclerView.setAdapter(new ListofdesignersAdapter(getApplicationContext(),mUserList));
-                       long count= snap.getChildrenCount();
+                    recyclerView.setAdapter(new ListofdesignersAdapter(getApplicationContext(),mUserList,id));
 
-                    Toast.makeText(getApplicationContext(),mUserList.size()+"",Toast.LENGTH_LONG).show();
                  //   Toast.makeText(getApplicationContext(),snap.child("email").getValue().toString(),Toast.LENGTH_LONG).show();
 
                 }

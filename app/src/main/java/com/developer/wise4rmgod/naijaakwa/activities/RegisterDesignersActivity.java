@@ -52,12 +52,12 @@ import butterknife.BindView;
 public class RegisterDesignersActivity extends AppCompatActivity implements RegisterDesignersMVP.view {
     ActivityRegisterdesignersBinding binding;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("Designers").child("userid");
+    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("userid");
     private RegisterDesignersPresenter registerDesignersPresenter;
     @BindView(R.id.scrollView)
     ScrollView scrollView;
     FirebaseStorage storage = FirebaseStorage.getInstance();
-    StorageReference storageRef = storage.getReference().child("NaijaAkwa").child("Designers").child("userid");
+    StorageReference storageRef = storage.getReference().child("NaijaAkwa").child("userid");
     Uri filePath;
     int PICK_IMAGE_REQUEST = 111;
     @Override
@@ -150,7 +150,6 @@ public class RegisterDesignersActivity extends AppCompatActivity implements Regi
         binding.progressBar.setVisibility(View.VISIBLE);
 
 
-
                           if(filePath != null) {
                            //   binding.progressBar.setVisibility(View.VISIBLE);
 
@@ -190,6 +189,7 @@ public class RegisterDesignersActivity extends AppCompatActivity implements Regi
                                                             .show();
                                                     Intent feeds = new Intent(getApplicationContext(), FeedsActivity.class);
                                                     feeds.putExtra("id", id);
+                                                    feeds.putExtra("role",role);
                                                     startActivity(feeds);
                                                 } else {
                                                     binding.progressBar.setVisibility(View.GONE);

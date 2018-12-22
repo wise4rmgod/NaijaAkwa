@@ -31,7 +31,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class BuyerProfileActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("Buyer");
+    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("userid");
     @BindView(R.id.profile)
     CircleImageView profileimg;
     @BindView(R.id.buyerprofilename)
@@ -65,7 +65,7 @@ public class BuyerProfileActivity extends AppCompatActivity {
                    String sex = dataSnapshot.child(profileid).child("sex").getValue().toString();
                   String address = dataSnapshot.child(profileid).child("address").getValue().toString();
                   String role = dataSnapshot.child(profileid).child("role").getValue().toString();
-                  String fullname = dataSnapshot.child(profileid).child("full_name").getValue().toString();
+                  String fullname = dataSnapshot.child(profileid).child("fullname").getValue().toString();
                   String img = dataSnapshot.child(profileid).child("img").getValue().toString();
                    buyerprofilesex.setText(sex);
                    buyerprofileaddress.setText(address);

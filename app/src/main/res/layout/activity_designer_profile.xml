@@ -32,6 +32,7 @@
             android:layout_height="130dp"
             android:layout_marginTop="5dp"
             android:clickable="true"
+            android:contentDescription="@string/designerprofile"
             android:elevation="5dp"
             android:padding="20dp"
             android:scaleType="centerCrop"
@@ -142,41 +143,8 @@
                     android:textSize="10sp"
                     android:text="Followings"/>
             </LinearLayout>
-            <Space
-                android:layout_width="30dp"
-                android:layout_height="wrap_content" />
-            <View
 
-                android:layout_width="1dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
-                android:background="@color/gray" />
-   <Space
-       android:layout_width="30dp"
-    android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="end"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    android:textAlignment="center"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:text="23"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/gray"
-                    android:textAlignment="center"
-                    android:textSize="10sp"
-                    android:text="Views Per Day"/>
-            </LinearLayout>
 
               </LinearLayout>
         <LinearLayout
@@ -190,16 +158,87 @@
                 android:id="@+id/designerprofilephonecall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/phonecalldescription"
                 android:src="@drawable/ic_phone_24dp"/>
 
             <ImageView
-                android:id="@+id/designerprofilechat"
+                android:id="@+id/designerprofilesms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/chatdescription"
                 android:layout_marginStart="20dp"
                 android:src="@drawable/ic_email_24dp"/>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/designeruploadgallery"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/curveedgesbtn"
+            android:textSize="11dp"
+            android:textColor="@color/white"
+            android:text="Upload"/>
+
+            <Button
+                android:id="@+id/designerprofileratingbutton"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/curveedgesbtn"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="11dp"
+                android:textColor="@color/white"
+                android:text="Rate Me"/>
+            <Button
+                android:id="@+id/designerprofileupdatebutton"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/curveedgesbtn"
+                android:textSize="11dp"
+                android:textColor="@color/white"
+                android:text="Update"/>
+        </LinearLayout>
+<LinearLayout
+    android:id="@+id/ratingparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/setrating"
+        style="@android:style/Widget.Material.Light.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="@color/golden"
+        android:rating="3.5"/>
+    <Button
+        android:id="@+id/submitrating"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/curveedgesbtn"
+        android:textSize="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/white"
+        android:text="submit"/>
+</LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -210,6 +249,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
+                android:contentDescription="@string/locationdescription"
                 android:src="@drawable/ic_location_on_black_24dp"/>
 
             <TextView
@@ -222,21 +262,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:src="@drawable/ic_launcher_background"/>
-
-
-        </LinearLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/designerprofilerecyclerview"

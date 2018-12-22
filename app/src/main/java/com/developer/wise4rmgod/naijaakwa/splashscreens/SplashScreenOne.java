@@ -33,7 +33,6 @@ public class SplashScreenOne extends AppCompatActivity {
                     editor.putBoolean("on", false);
                     editor.apply();
                     Intent intent = new Intent(SplashScreenOne.this,SplashScreenTwo.class);
-
                     startActivity(intent);
                     finish();
                     //  editor.putBoolean("on",false);
@@ -44,7 +43,9 @@ public class SplashScreenOne extends AppCompatActivity {
 
         else {
             Intent intent = new Intent(SplashScreenOne.this,SigninAndSignupActivity.class);
+                   intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
+            overridePendingTransition(0,0);
             finish();
         }
 

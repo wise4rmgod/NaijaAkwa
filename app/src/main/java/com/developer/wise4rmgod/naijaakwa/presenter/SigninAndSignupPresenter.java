@@ -31,4 +31,9 @@ public class SigninAndSignupPresenter implements SigninAndSignupMVP.presenter {
          view.signinanim2();
     }
 
+    @Override
+    public void forgotpasswordbtn() {
+        view.forgotpassword();
+    }
+
 }

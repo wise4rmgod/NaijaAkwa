@@ -28,4 +28,14 @@ public class DesignerProfilePresenter implements DesignerProfileMVP.presenter {
     public void updateprofilebtn() {
        view.updateprofile();
     }
+
+    @Override
+    public void sms() {
+        view.sms();
+    }
+
+    @Override
+    public void rating() {
+        view.rating();
+    }
 }

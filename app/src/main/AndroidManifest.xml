@@ -2,9 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.developer.wise4rmgod.naijaakwa">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -13,25 +16,44 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splashscreens.SplashScreenOne">
+        <activity
+            android:name=".splashscreens.SplashScreenOne"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".splashscreens.SplashScreenTwo" />
-        <activity android:name=".splashscreens.SplashScreenThree" />
-        <activity android:name=".splashscreens.SplashScreenFour" />
-        <activity android:name=".activities.SigninAndSignupActivity" />
-        <activity android:name=".activities.RegisterDesignersActivity" />
-        <activity android:name=".activities.CompleteActivity" />
+        <activity
+            android:name=".splashscreens.SplashScreenTwo"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".splashscreens.SplashScreenThree"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".splashscreens.SplashScreenFour"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.SigninAndSignupActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.RegisterDesignersActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.CompleteActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".activities.FeedsActivity"
             android:label="@string/title_activity_feeds"
+            android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.NoInternetConnection" />
-        <activity android:name=".activities.RegisterBuyersActivity" />
+        <activity
+            android:name=".activities.NoInternetConnection"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.RegisterBuyersActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".activities.AddMapActivity"
             android:label="@string/title_activity_add_map" /> <!-- Include the AdActivity configChanges and theme. -->
@@ -47,16 +69,44 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-5378239849378753~6148633003" />
 
-        <activity android:name=".activities.BuyerProfileActivity" />
-        <activity android:name=".activities.DesignerProfileActivity" />
-        <activity android:name=".activities.TermOfServiceActivity" />
-        <activity android:name=".activities.PrivacyPolicyActivity" />
-        <activity android:name=".activities.PostFeedsActivity" />
+        <activity
+            android:name=".activities.BuyerProfileActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.DesignerProfileActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.TermOfServiceActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.PostFeedsActivity"
+            android:launchMode="singleTop" />
         <activity
             android:name=".activities.ListOfDesignersActivity"
             android:label="@string/title_activity_list_of_designers"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ForgotPasswordActivity"></activity>
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.PostcommentsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.UploadDesignersGallery"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ShowDesignersGalleryDetails"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ShowDesignersGalleryCommentsandLikesActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activities.FollowingActivity"></activity>
     </application>
 
 </manifest>

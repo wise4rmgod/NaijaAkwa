@@ -11,9 +11,11 @@
     <string name="city">City</string>
     <string name="address">Address</string>
     <string name="sex">Sex</string>
+    <string name="post">Post</string>
     <string name="retry">Retry</string>
     <string name="gotomap">Goto Map</string>
     <string name="level">Level</string>
+    <string name="hashkey">#</string>
     <string name="resetemailfailed">Failed to send reset email!</string>
     <string name="instructionsent">We have sent you instructions to reset your password!</string>
     <string name="forgotpasswordedittextemail">Type Your E-mail Here</string>
@@ -104,5 +106,12 @@
     <string name="banner_ad_unit_id">ca-app-pub-5378239849378753/5877170263</string>
     <string name="title_activity_list_of_designers">ListOfDesignersActivity</string>
 
-
+    <!-- -
+          Imageview description
+       <!- -->
+    <string name="profilepixdescription"> profilepix description </string>
+    <string name="phonecalldescription"> phonecall description </string>
+    <string name="chatdescription"> chat description </string>
+    <string name="locationdescription"> location icon description </string>
+    phonecalldescription
 </resources>

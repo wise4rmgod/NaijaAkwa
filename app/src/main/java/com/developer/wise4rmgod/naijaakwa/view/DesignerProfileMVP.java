@@ -7,6 +7,9 @@ public interface DesignerProfileMVP {
         void chat();
         void uploadimagestogallery();
         void updateprofile();
+        void sms();
+        void rating();
+
     }
 
     interface presenter{
@@ -14,6 +17,8 @@ public interface DesignerProfileMVP {
         void chatbtn();
         void uploadimagestogallerybtn();
         void updateprofilebtn();
+        void sms();
+        void rating();
     }
 
 

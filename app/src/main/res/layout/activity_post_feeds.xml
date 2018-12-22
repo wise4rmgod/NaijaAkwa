@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/rootview"
     tools:context=".activities.PostFeedsActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,8 +14,9 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/postactivityprofileimg"
@@ -24,7 +26,7 @@
         android:clickable="true"
         android:elevation="5dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_add_image_24dp"
+        android:src="@drawable/errorimagenotfound"
         app:civ_border_color="#FFFFFFFF"
         app:civ_border_width="3dp" />
 
@@ -36,6 +38,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
         android:layout_marginBottom="13dp"
         android:text="Nwokocha Wisdom" />
     </LinearLayout>
@@ -43,6 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <EditText
             android:id="@+id/posteditext"
             android:layout_width="match_parent"
@@ -50,15 +56,14 @@
             android:layout_marginTop="30dp"
             android:textAlignment="center"
             android:maxLength="100"
-            android:inputType="textMultiLine"
-            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine|textShortMessage"
+            android:textColorHint="@color/white"
             android:textColorLink="@color/golden"
-            android:cursorVisible="false"
+            android:selectAllOnFocus="false"
             android:textColor="@color/white"
-
             android:textCursorDrawable="@drawable/cursorwhite"
-            android:hint="What's the trending topic in fashion"/>
-
+            android:hint="What's the trending topic in fashion"
+             />
 
     </LinearLayout>
         <HorizontalScrollView
@@ -159,6 +164,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:background="@drawable/rippleeffect"
+            android:src="@drawable/ic_send_black_24dp"
             android:text="Post"/>
     </LinearLayout>
     </LinearLayout>

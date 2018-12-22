@@ -41,7 +41,6 @@
             android:id="@+id/designer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:text="Designer"/>
         <Space
             android:layout_width="2dp"
@@ -50,7 +49,6 @@
             android:id="@+id/buyer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:text="Buyer"/>
     </LinearLayout>
     <LinearLayout

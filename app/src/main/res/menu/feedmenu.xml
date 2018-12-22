@@ -7,7 +7,7 @@
     <item  android:id="@+id/Designers"
         android:title="Designers"/>
     <item  android:id="@+id/search"
-        android:title="Search"/>
+        android:title="Add widget"/>
     <item  android:id="@+id/profile"
         android:title="Profile"
         app:showAsAction="withText"/>

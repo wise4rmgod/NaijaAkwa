@@ -13,4 +13,14 @@ public class FeedsPresenter implements FeedsMVP.presenter {
     public void postbtn() {
         view.post();
     }
+
+    @Override
+    public void followersbtn() {
+        view.followers();
+    }
+
+    @Override
+    public void notificationbtn() {
+         view.notification();
+    }
 }

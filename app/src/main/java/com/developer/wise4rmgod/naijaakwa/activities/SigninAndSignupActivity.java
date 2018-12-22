@@ -53,7 +53,7 @@ public class SigninAndSignupActivity extends AppCompatActivity implements Signin
     LinearLayout signupparent;
     @BindView(R.id.signupbtn)
     Button signupbtn;
-    @BindView(R.id.forpassword)
+    @BindView(R.id.forgotpasswordsigninsignup)
     TextView forgotpassword;
     @BindView(R.id.emailsignin)
     EditText emailsignin;
@@ -82,12 +82,15 @@ public class SigninAndSignupActivity extends AppCompatActivity implements Signin
         ButterKnife.bind(this);
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
+        overridePendingTransition(R.anim.slidein, R.anim.slideout);
         //get the user session
         if (auth.getCurrentUser() != null) {
             finish();
             Intent intent = new Intent(SigninAndSignupActivity.this, FeedsActivity.class);
             intent.putExtra("id",auth.getUid());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
+            finish();
 
         }
 
@@ -106,7 +109,12 @@ public class SigninAndSignupActivity extends AppCompatActivity implements Signin
 
         }
 
-
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+        signinAndSignupPresenter.forgotpasswordbtn();
+            }
+        });
 
         signinanim2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -238,6 +246,12 @@ public class SigninAndSignupActivity extends AppCompatActivity implements Signin
         signinparent.setVisibility(View.GONE);
         signupparent.setVisibility(View.VISIBLE);
 
+    }
+
+    @Override
+    public void forgotpassword() {
+        Intent intent = new Intent(getApplicationContext(),ForgotPasswordActivity.class);
+               startActivity(intent);
     }
 
 }

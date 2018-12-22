@@ -14,13 +14,13 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/listdesigneractivityprofileimg"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:clickable="true"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_add_image_24dp"
+            android:src="@drawable/errorimagenotfound"
             app:civ_border_color="#FFFFFFFF"
             app:civ_border_width="3dp" />
 
@@ -56,26 +56,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
+        android:layout_marginStart="50dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/citytextview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="10dp"
             android:layout_marginEnd="81dp"
             android:text="Port Harcourt"/>
 
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/listdesignerratingBar"
             style="@android:style/Widget.Material.Light.RatingBar.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="9dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginEnd="190dp"
             android:backgroundTint="@color/colorPrimaryDark"
             android:isIndicator="false"
@@ -86,22 +85,17 @@
 
     </LinearLayout>
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="113dp" />
-
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
+        android:layout_marginTop="13dp"
         android:background="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/guideline" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
 
 </android.support.constraint.ConstraintLayout>
 </layout>

@@ -30,6 +30,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:src="@drawable/ic_notifications_none_black_24dp"/>
+      <TextView
+          android:id="@+id/feednotificationcount"
+          android:layout_width="wrap_content"
+          android:layout_height="20dp"
+          android:layout_marginBottom="5dp"
+          android:paddingStart="2dp"
+          android:paddingEnd="2dp"
+          android:background="@drawable/circle_icon_for_notification"
+          android:textColor="@color/white"
+          />
     </LinearLayout>
     <View
         android:id="@+id/divider2"
@@ -39,6 +49,12 @@
         android:background="@color/colorPrimaryDark"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="44dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feedsrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

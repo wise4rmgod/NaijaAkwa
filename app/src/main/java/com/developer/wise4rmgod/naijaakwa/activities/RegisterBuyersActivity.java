@@ -60,10 +60,14 @@ public class RegisterBuyersActivity extends AppCompatActivity implements Registe
     @BindView(R.id.progressBar)
     ProgressBar progressBar;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("Buyer").child("userid");
+    DatabaseReference ref = database.getReference().child("NaijaAkwa").child("userid");
     private RegisterBuyerPresenter registerBuyerPresenter;
     @BindView(R.id.scrollView)
     ScrollView scrollView;
+    public String id;
+    public String email;
+    public String password;
+    public String role;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -108,11 +112,11 @@ public class RegisterBuyersActivity extends AppCompatActivity implements Registe
 
     @Override
     public void register() {
-        final String id = getIntent().getStringExtra("id");
-        final String email = getIntent().getStringExtra("email");
+         id = getIntent().getStringExtra("id");
+         email = getIntent().getStringExtra("email");
         String status = getIntent().getStringExtra("status");
-        final String password = getIntent().getStringExtra("password");
-        final String role = getIntent().getStringExtra("role");
+         password = getIntent().getStringExtra("password");
+         role = getIntent().getStringExtra("role");
        progressBar.setVisibility(View.VISIBLE);
 
 
@@ -143,8 +147,8 @@ public class RegisterBuyersActivity extends AppCompatActivity implements Registe
                                             users.put("role", role);
                                             users.put("address", address.getText().toString());
                                             users.put("city", city.getText().toString());
-                                            users.put("img",childRef.getDownloadUrl().toString());
-                                            users.put("full_name", fullname.getText().toString());
+                                            users.put("img",uri.toString());
+                                            users.put("fullname", fullname.getText().toString());
 
                                             ref.child(id).setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override
@@ -155,12 +159,12 @@ public class RegisterBuyersActivity extends AppCompatActivity implements Registe
                                                         Snackbar.make(scrollView, R.string.successful_message, Snackbar.LENGTH_SHORT)
                                                                 .show();
 
-                                                        Toast.makeText(getApplicationContext(), uri.toString(), Toast.LENGTH_SHORT).show();
+
                                                         Intent feeds = new Intent(getApplicationContext(), FeedsActivity.class);
                                                         feeds.putExtra("id",id);
-                                                        feeds.putExtra("role",role);
+                                                        feeds.putExtra("role","buyer");
                                                         startActivity(feeds);
-                                                        Toast.makeText(getApplicationContext(), uri.toString(), Toast.LENGTH_SHORT).show();
+
                                                     }
 
                                                     else {

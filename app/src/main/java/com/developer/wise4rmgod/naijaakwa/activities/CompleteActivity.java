@@ -37,7 +37,9 @@ public class CompleteActivity extends AppCompatActivity implements CompleteMVP.v
     SharedPreferences pref;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference ref = database.getReference().child("NaijaAkwa");
-
+   public String id ;
+   public String emailaccount;
+   public String password ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,9 @@ public class CompleteActivity extends AppCompatActivity implements CompleteMVP.v
       //  String password = getIntent().getStringExtra("password");
           editor.clear();
         emailaccountcomplete.setText(emailaccount);
+        // default background color for the two buttons are white
+        designerbutton.setBackgroundResource(R.color.white);
+        buyerbutton.setBackgroundResource(R.color.white);
 
         designerbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,8 +100,6 @@ public class CompleteActivity extends AppCompatActivity implements CompleteMVP.v
             }
         });
 
-
-
     }
 
     @Override
@@ -119,9 +122,9 @@ public class CompleteActivity extends AppCompatActivity implements CompleteMVP.v
 
     @Override
     public void continues() {
-        String id =getIntent().getStringExtra("id");
-        String emailaccount =getIntent().getStringExtra("email");
-        String password = getIntent().getStringExtra("password");
+         id =getIntent().getStringExtra("id");
+         emailaccount =getIntent().getStringExtra("email");
+         password = getIntent().getStringExtra("password");
 
         if (pref.getBoolean("complete",true)){
             Intent intent = new Intent(getApplicationContext(),RegisterDesignersActivity.class);

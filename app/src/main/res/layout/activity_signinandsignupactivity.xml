@@ -81,14 +81,7 @@
             android:background="@drawable/curveedgesbtn"
             android:text="@string/signin"/>
 
-        <TextView
-            android:id="@+id/forpassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:text="Forget Password ?"/>
+
 
     </LinearLayout>
 </LinearLayout>
@@ -165,17 +158,17 @@
                 android:background="@drawable/curveedgesbtn"
                 android:text="@string/signup"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:text="Forget Password ?"/>
 
         </LinearLayout>
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/forgotpasswordsigninsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="Forget Password ?"/>
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
