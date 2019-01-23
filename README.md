@@ -1,2 +1,2 @@
 # NaijaAkwa
-My Final Final project for udacity nanodegree
+My FinaL project for Udacity Nanodegree Program
